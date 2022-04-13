@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="calculator">
+            <div id="view">
+                <div id="memories"></div>
+                <span id="viewText"></span>
+            </div>
+            <div id="keyboard">
+                <button class="operator but" id="equal" onclick="calc(this.value)" value="=">=</button>
+                <button class="operator but" id="plus" onclick="printOperator(this.value)" value="+">+</button>
+                <button class="operator but" id="minus" onclick="printOperator(this.value)" value="-">-</button>
+                <button class="operator but" id="multiply" onclick="printOperator(this.value)" value="*">x</button>
+                <button class="operator but" id="divide" onclick="printOperator(this.value)" value="/">/</button>
+                <button class="operator but" id="percent" onclick="printOperator(this.value)" value="%">%</button>
+                <button class="numbers but" id="num0" onclick="printNumber(this.value)" value="0">0</button>
+                <button class="numbers but" id="num1" onclick="printNumber(this.value)" value="1">1</button>
+                <button class="numbers but" id="num2" onclick="printNumber(this.value)" value="2">2</button>
+                <button class="numbers but" id="num3" onclick="printNumber(this.value)" value="3">3</button>
+                <button class="numbers but" id="num4" onclick="printNumber(this.value)" value="4">4</button>
+                <button class="numbers but" id="num5" onclick="printNumber(this.value)" value="5">5</button>
+                <button class="numbers but" id="num6" onclick="printNumber(this.value)" value="6">6</button>
+                <button class="numbers but" id="num7" onclick="printNumber(this.value)" value="7">7</button>
+                <button class="numbers but" id="num8" onclick="printNumber(this.value)" value="8">8</button>
+                <button class="numbers but" id="num9" onclick="printNumber(this.value)" value="9">9</button>
+                <button class="numbers but" id="comma" onclick="printNumber(this.value); calc()" value=".">.</button>
+                <button class="controls but" id="cleanAll" onclick="cleanAll()">AC</button>
+                <button class="controls but" id="cleanLast" onclick="cleanLast()">C</button>
+                <button class="controls but" id="backspace" onclick="backSpace()">&#x232B;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

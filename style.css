@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(0, 0, 0, 0.154);
+    font: normal 20px Arial;
+}
+section#calculator {
+    width: 300px;
+    min-height: 500px;
+    background-color: rgba(0, 0, 27, 0.142);
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
+}
+div#view{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    min-height: 200px;
+    max-width: 300px;
+}
+div#view:nth-child(1){
+
+}
+div#memories {
+    color: rgba(255, 255, 255, 0.687);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+span {
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+    word-break: break-all;
+}
+button {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+}
+div#keyboard {
+    display: grid;
+    min-height: 300px;
+    border-radius: 0px 0px 10px 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p"
+    "q r s t";
+}
+button#cleanAll {
+    grid-area: a;
+}
+button#cleanLast {
+    grid-area: b;
+}
+button#backspace {
+    grid-area: c;
+}
+button#percent {
+    grid-area: d;
+}
+button#num9 {
+    grid-area: g;
+}
+button#num8 {
+    grid-area: f;
+}
+button#num7 {
+    grid-area: e;
+}
+button#num6 {
+    grid-area: k;
+}
+button#num5 {
+    grid-area: j;
+}
+button#num4 {
+    grid-area: i;
+}
+button#num3 {
+    grid-area: o;
+}
+button#num2 {
+    grid-area: n;
+}
+button#num1 {
+    grid-area: m;
+}
+button#num0 {
+    grid-area: q;
+}
+button#comma {
+    grid-area: r;
+}
+button#plus {
+    grid-area: t;
+}
+button#minus {
+    grid-area: p;
+}
+button#multiply {
+    grid-area: l;
+}
+button#divide {
+    grid-area: h;
+}
+button#equal {
+    grid-area: s;
+}
